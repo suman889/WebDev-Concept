@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegation</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Event delegation</h1>
+
+        <p>
+            The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a
+            handler to each of them –.
+            <span class="highlight"> we put a single handler on their common ancestor</span>
+
+        </p>
+
+        <div class="languages">
+            <ul id="list">
+                <li>JavaScript </li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>Node js</li>
+            </ul>
+
+            <input type="text" placeholder="Enter text" >
+            <div>
+                <button onclick="addElement()">
+                    Add New Element
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
